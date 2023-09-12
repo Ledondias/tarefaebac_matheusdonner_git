@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffe4dc94;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+h1{
+    color: #ff64c8;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+form input, form button, .success-message, .error-message, .equal-inputs-message{
+    display: block;
+    width: 320px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+}
+form input:focus{
+    outline-color: #ff64dc;
+}
+form button{
+    background-color: #ff64c8;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+form button:hover{
+    background-color: rgb(255, 10, 220);
+}
+.success-message, .error-message, .equal-inputs-message{
+    background-color: #0ac814;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+.error-message, .equal-inputs-message{
+    background-color: #ff0a0f;
+    display: none;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML com validações em JavaScript</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Formulário com validação</h1>
+            <form id="validation-form">
+                <input class="input-A" type="number" placeholder="Campo A" required>
+                <input class="input-B" type="number" placeholder="Campo B" required>
+                <button id="form-button" type="submit">Enviar</button>
+            </form>
+            <p class="success-message"></p> <p class="error-message"></p> <p class="equal-inputs-message"></p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
