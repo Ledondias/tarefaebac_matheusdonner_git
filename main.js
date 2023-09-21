@@ -3,13 +3,13 @@ $(document).ready(function (){
     $('form').on('submit', function (event){
         event.preventDefault()
         
-        const shoreInput = $('#shore-input').val()
+        const choreInput = $('#chore-input').val()
 
-        const addShore = $(`<li><p class="shore-text">${shoreInput}</p></li>`)
-        $(addShore).appendTo('ul')
+        const addChore = $(`<li><p class="chore-text">${choreInput}</p></li>`)
+        $(addChore).appendTo('ul')
 
         //Evento adicionado para permitir a inserção do "line-through" em um item por vez.
-        $('.shore-text').each(function (){
+        $('.chore-text').each(function (){
             $(this).click(function (){
                 if($(this).css('text-decoration') == 'line-through'){
                     $(this).css('text-decoration', 'none')
@@ -19,6 +19,6 @@ $(document).ready(function (){
             })
         })
 
-        $('#shore-input').val('')
+        $('#chore-input').val('')
     })
 })
