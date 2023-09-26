@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com validação e máscaras</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Formulário com validação e máscaras</h1>
+    </header>
+    <div class="container container-flex">
+        <form>
+            <div class="form-input">
+                <label for="name-input">Nome completo:</label>
+                <input type="text" name="name" id="name-input" placeholder="Seu nome completo">
+            </div>           
+            <div class="form-input">
+                <label for="email-input">E-mail:</label>
+                <input type="email" name="email" id="email-input" placeholder="Seu email">
+            </div>
+            <div class="form-input">
+                <label for="tel-input">Telefone:</label>
+                <input type="tel" name="tel" id="tel-input" placeholder="Seu telefone">
+            </div>
+            <div class="form-input">
+                <label for="cpf-input">CPF:</label>
+                <input type="text" name="cpf" id="cpf-input" placeholder="Seu CPF">
+            </div>
+            <div class="form-input">
+                <label for="complete-address-input">Seu endereço:</label>
+                <input type="text" name="address" id="complete-address-input" placeholder="Seu endereço completo">
+            </div>
+            <div class="form-input">
+                <label for="cep-input">CEP:</label>
+                <input type="text" name="cep" id="cep-input" placeholder="Seu CEP">
+            </div>
+            <div class="form-input container-flex">
+                <button type="submit">Enviar</button>
+            </div>           
+        </form>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/messages_pt_BR.min.js"></script>
+        <script src="./js/main.js"></script>
+    </div>
+</body>
+</html>
