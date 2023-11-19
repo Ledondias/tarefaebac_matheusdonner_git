@@ -1,0 +1,38 @@
+@use 'config/variables';
+@use 'config/reset';
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color: variables.$primaryColor;
+    padding: 20px;
+
+    h1{
+        color: variables.$fontColor;
+    }
+}
+main{
+    margin-top: 20px;
+    
+    p{
+        margin: 10px 0px;
+        font-weight: bold;
+    }
+
+    button{
+        background-color: variables.$primaryColor;
+        color:#fff;
+        width: 120px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        padding: 10px 5px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+}

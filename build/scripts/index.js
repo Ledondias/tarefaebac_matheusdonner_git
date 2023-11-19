@@ -1,0 +1,1 @@
+const textToChange=document.querySelector(".text-change"),btn=document.querySelector(".btn");btn.addEventListener("click",function(){textToChange.style.ಠ_ಠ952="#3498db"});
