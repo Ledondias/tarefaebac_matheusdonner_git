@@ -1,0 +1,57 @@
+// Cores
+@bgColor: #ff7f50;
+@headerColor: #eccc68;
+@textColor: #fff;
+// Fontes
+@mainFont: 'Rubik', sans-serif;
+@altFont: 'Lobster', cursive;
+@clockBorderColor: #000;
+
+.flexConfig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: @bgColor;
+    color: @textColor;
+    font-family: @mainFont;
+}
+header{
+    width: 100%;
+    background-color: @headerColor;
+    padding: 24px 0;
+    text-align: center;
+
+    .container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        h1{
+            font-size: 3em;
+            font-weight: bold;
+        }
+    }
+}
+.clocktime-container{
+    .flexConfig();
+    padding-top: 90px;
+
+    .clocktime{
+        width: 350px;
+        height: 100px;
+        .flexConfig();
+        background-color: @headerColor;
+        color: @textColor;
+        border: 1px solid @clockBorderColor;
+        border-radius: 5px;
+        font-size: 60px;
+    }
+}
